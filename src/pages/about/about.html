@@ -17,19 +17,5 @@
 </ion-header>
 
 <ion-content class="aboutContent">
-    <ion-card *ngFor="let user of users">
-        <ion-item>
-          <ion-avatar item-end>
-            <img [src]="user.picture.medium">
-          </ion-avatar>
-          <span class="leftContent">
-            <h2 text-capitalize>{{ user.name?.first }} {{ user.name?.last }}</h2>
-            <p>{{ user.dob.date }}</p>
-          </span>
-        </ion-item>
-      </ion-card>
-     
-      <ion-infinite-scroll (ionInfinite)="loadMore($event)" loadingSpinner="bubbles" loadingText="Loading Users...">
-        <ion-infinite-scroll-content></ion-infinite-scroll-content>
-      </ion-infinite-scroll>
+    <h2>About Page</h2>
 </ion-content>
