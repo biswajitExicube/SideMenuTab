@@ -54,8 +54,7 @@ ion-title{
 ion-header{
     ion-navbar{
         .toolbar-background{
-            background: none;
-            border: none !important;
+            background: $pink;
         }
         button{
             ion-icon{
@@ -71,19 +70,7 @@ ion-header{
 }
 .ion-page{
     ion-content{
-        background: url('../assets/imgs/contentBG.jpg') no-repeat center center !important;
-        // background-size: cover;
-        object-fit: cover;
-        &::after{
-            content: '';
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0 , 0, 0.6);
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            // z-index: 2;
-        }
+        
     }
 }
 ion-tabs{
