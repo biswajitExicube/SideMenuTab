@@ -1,3 +1,137 @@
 page-home {
+    .homeContent{
+        ion-grid{
+            ion-row{
+                ion-col{
+                    text-align: center;
+                    ion-card{
+                        width: 100%;
+                        margin: 0px auto;
+                        border-radius: 18px;
+                        ion-card-content{
+                            padding: 0px;
+                            position: relative;
+                            min-height: 20vh;
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 100%;
+                                height: 100%;
+                                background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(164, 2, 52, 0.6));
+                                border-radius: 18px;
+                                // background: rgba(164, 2, 52, 0.6) //#a40234
+                            }
+                            img{
+                                position: relative;
+                                width: 100%;
+                                height: 21vh;
+                                object-fit: cover;
+                            }
+                            h2, h4, p{
+                                margin: 0px;
+                                position: absolute;
+                                z-index: 2;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                text-align: center;
+                                color: #fff;
+                            }
+                            h2{ 
+                                font-size: 18px;
+                                font-weight: bold;
+                                top: 2vh;
+                            }
+                            h4{
+                                top: 8vh;
+                            }
+                            p{
+                                bottom: 2vh;
+                                top: initial;
+                            }
+                        }
+                    }
+                }
+                ion-col:nth-of-type(n){
+                    ion-card ion-card-content{
+                        &::after{
+                            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 2, 52, 0.6));
+                            background: #ff0000;
+                        }
+                    }
+                }
+                ion-col:nth-of-type(n + 2){
+                    ion-card ion-card-content{
+                        &::after{
+                            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 2, 52, 0.6));
+                            background: #666;
+                        }
+                    }
+                }
+                ion-col:nth-of-type(4n + 3){
+                    ion-card ion-card-content{
+                        &::after{
+                            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 2, 52, 0.6));
+                            background: #0000ff;
+                        }
+                    }
+                }   
+                ion-col:nth-of-type(4n + 2){
+                    ion-card ion-card-content{
+                        &::after{
+                            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(164, 2, 52, 0.6));
+                            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(164, 2, 52, 0.6));
+                        }
+                    }
+                }
+                ion-col:nth-of-type(3n + 3){
+                    ion-card ion-card-content{
+                        &::after{
+                            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(164, 2, 52, 0.6));
+                            background: #000;
+                        }
+                    }
+                } 
+                ion-col:nth-of-type(3n + 4){
+                    ion-card ion-card-content{
+                        &::after{
+                            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(164, 2, 52, 0.6));
+                            background: #00ffff;
+                        }
+                    }
+                } 
+                ion-col:nth-of-type(4n + 3){
+                    ion-card ion-card-content{
+                        &::after{
+                            // background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(164, 2, 52, 0.6));
+                            background: #222;
+                        }
+                    }
+                }          
+            }
+        }
 
+        .infinite-loading{
+            ion-spinner{
+                svg{
+                    circle{
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+// .itemGroup:nth-of-type(3n) ion-item.listItem{
+//     border-color: #002291;
+// }
+// .itemGroup:nth-of-type(3n + 2) ion-item.listItem{
+//     border-color: #df1200;
+// }
+// .itemGroup:nth-of-type(3n + 3) ion-item.listItem{
+//     border-color: #9f45e9;
+// }

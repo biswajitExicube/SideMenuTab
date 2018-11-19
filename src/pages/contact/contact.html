@@ -1,17 +1,24 @@
 <ion-header>
   <ion-navbar>
+      <ion-buttons left>
+        <button ion-button>
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons> 
     <ion-title>
       Contact
     </ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="openMenu('right')">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons> 
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+    <video width="400" autoplay loop class="embed-responsive-item" controls>
+        <source src="https://youtu.be/YImDJmbp05c" type="video/mp4">
+      </video>
+  <button ion-button color="success" (click)="launchIntoFullscreen(this)">Click</button>
 </ion-content>

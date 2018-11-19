@@ -1,3 +1,28 @@
 page-about {
-
+    .aboutContent{
+        // direction: rtl;
+        ion-card{
+            width: 100%;
+            margin: 0px 0px 8px 0px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            ion-item{
+                background: none;
+                .item-inner{
+                    .leftContent{
+                        border-right: 1px solid rgba(255, 255, 255, 0.3);
+                        display: inline-block;
+                        width: 100%;
+                        padding-right: 10px;
+                    }
+                    ion-label{
+                        h2, p{
+                            color: #fff;
+                            direction: rtl;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
